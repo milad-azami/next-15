@@ -5,7 +5,12 @@ async function AsyncAPI() {
   const token = cookieStore.get("token");
   console.log(token);
 
-  return <div>{token?.value || "NO TOKEN"}</div>;
+  return (
+    <div>
+      <h1>Botostart | Next.js 15</h1>
+      <p>{token?.value || "NO TOKEN"}</p>
+    </div>
+  );
 }
 
 export default AsyncAPI;
